@@ -104,59 +104,99 @@ footer {
 <section id="anleitung" class="active">
 <div class="card">
 
-<h2>Bedienungsanleitung TZ-Pro</h2>
+<pre style="white-space: pre-wrap; font-family: inherit;">
+# Bedienungsanleitung TZ-Pro (aktuelle Version)
 
-<h3>Vorwort und Zweck der App</h3>
-<p>
-TZ-Pro ist die zentrale mobile Anwendung fuer die taegliche Arbeit im Service.
-Die App kombiniert Zeiterfassung, Auftragsvorbereitung, Tourenplanung
-und Monatsauswertung in einer konsistenten Oberflaeche.
-</p>
+## Vorwort und Zweck der App
+TZ-Pro ist die zentrale mobile Anwendung fuer die taegliche Arbeit im Service. Die App fuehrt mehrere Aufgaben in einer Oberflaeche zusammen: die klassische Zeiterfassung im Tageszettel, die inhaltliche Vorbereitung von Auftraegen, die taegliche Tourenplanung sowie die Erstellung von Monatsauswertungen als PDF. Das Ziel ist, den gesamten Ablauf von der Buchung ueber die Planung bis zur Auswertung konsistent und nachvollziehbar abzubilden.
 
-<h3>Installation</h3>
-<p>
-Die Installation erfolgt ueber eine bereitgestellte APK-Datei.
-Installation aus unbekannten Quellen muss erlaubt werden.
-Nach der Installation erfolgt die Anmeldung mit persoenlichen Zugangsdaten.
-</p>
+Die Anwendung ist auf den praktischen Alltag ausgelegt. Das bedeutet, dass auch bei instabiler oder fehlender Internetverbindung weitergearbeitet werden kann. Neue oder geaenderte Daten werden zunaechst lokal auf dem Geraet gespeichert und spaeter mit dem Server abgeglichen. Dadurch bleibt die App auch unterwegs nutzbar, ohne dass Eingaben verloren gehen.
 
-<h3>Tageszettel – Zeiterfassung</h3>
-<p>
-Arbeitszeiten werden als Buchungen mit Kategorie, Start- und Endzeit erfasst.
-Optional koennen Notizen und Auftragszuordnungen hinterlegt werden.
-Die Gesamtarbeitszeit wird automatisch berechnet.
-</p>
+--- 
 
-<h3>Auftragsvorbereitung</h3>
-<p>
-Auftraege enthalten Auftragsnummer, Kunde, Adresse, Zeitraum
-sowie geplante Positionen. Mehrtaegige Auftraege werden unterstuetzt.
-Adressvorschlaege erleichtern die Dateneingabe.
-</p>
+## Installation und erster Start
+Die Installation erfolgt ueber eine intern bereitgestellte APK-Datei. Da die Verteilung nicht ueber den Google Play Store laeuft, muss auf dem Geraet die Installation aus unbekannten Quellen fuer die jeweilige Download- oder Dateimanager-App erlaubt werden. Nach der Installation kann TZ-Pro direkt gestartet werden.
 
-<h3>Routenplanung</h3>
-<p>
-Auf Basis der aktiven Auftraege kann eine Tagesroute berechnet werden.
-Start- und Zieladresse sind individuell definierbar.
-</p>
+Beim ersten Start erscheint die Anmeldung. Es werden die persoenlichen Zugangsdaten verwendet. Benutzername und Passwort muessen exakt in der richtigen Schreibweise eingegeben werden. Je nach Sicherheitskonfiguration kann nach laengerer Inaktivitaet eine erneute Anmeldung erforderlich sein. Eine Passwortaenderung ist spaeter direkt in der App moeglich.
 
-<h3>Reports</h3>
-<p>
-Monatsreports und Performance-Reports koennen als PDF erzeugt werden.
-Vor Erstellung sollte eine Synchronisierung erfolgen.
-</p>
+--- 
 
-<h3>Offline-First & Synchronisierung</h3>
-<p>
-Neue Eingaben werden lokal gespeichert und spaeter mit dem Server
-innerhalb der EU synchronisiert.
-</p>
+## Grundaufbau der Oberflaeche
+Nach der Anmeldung wird der Hauptbildschirm mit dem aktuell ausgewaehlten Datum angezeigt. Das Datum in der oberen Leiste ist die zentrale Bezugsgroesse fuer fast alle Funktionen. Egal ob Zeiterfassung, Auftragsvorbereitung oder Routenplanung: gearbeitet wird immer auf Basis des gerade ausgewaehlten Tages.
 
-<h3>Sicherheit</h3>
-<p>
-Die Kommunikation erfolgt verschluesselt ueber HTTPS (TLS 1.2+).
-Jeder Benutzer arbeitet mit einem individuellen Konto.
-</p>
+In TZ-Pro gibt es zwei Hauptmodi. Der erste Modus ist der Tageszettel fuer die Zeitbuchungen. Der zweite Modus ist die Auftragsvorbereitung fuer Planung und Strukturierung von Auftraegen. Zwischen beiden Modi kann im Menue gewechselt werden. Die App zeigt in jeder Ansicht die jeweils relevanten Informationen fuer den ausgewaehlten Tag und blendet unnoetige Bedienelemente aus.
+
+--- 
+
+## Tageszettel: Zeiterfassung im Detail
+Im Tageszettel werden Arbeitszeiten als einzelne Buchungen erfasst. Eine Buchung besteht mindestens aus Kategorie, Startzeit und Endzeit. Optional kann eine Notiz hinterlegt werden. Wenn sinnvoll, kann die Buchung auch einem Auftrag zugeordnet werden. Dadurch wird spaeter eine bessere Auswertung moeglich, insbesondere im Zusammenspiel mit der Auftragsvorbereitung.
+
+Beim Anlegen eines neuen Eintrags oeffnet sich ein Eingabebereich, in dem die Zeiten direkt gesetzt werden. Die App unterstuetzt den typischen Ablauf aus der Praxis: Startzeit eingeben, Endzeit eingeben, Kategorie waehlen, ggf. Notiz ergaenzen und speichern. Bestehende Eintraege koennen anschliessend jederzeit bearbeitet werden. Ebenso koennen fehlerhafte oder nicht mehr benoetigte Eintraege geloescht werden.
+
+Die Kategorien bilden unterschiedliche Arten von Arbeitszeit ab, zum Beispiel Auftragszeit, Fahrt, Buero, Pause oder Urlaub. In der Fussleiste wird die Gesamtarbeitszeit des Tages angezeigt, wobei Pausen nicht in die Arbeitszeit einberechnet werden. So ist jederzeit direkt sichtbar, wie viel produktive Zeit fuer den ausgewaehlten Tag gebucht wurde.
+
+Die Zeiterfassung ist so ausgelegt, dass auch nachtraegliche Korrekturen moeglich bleiben. Wenn sich eine Uhrzeit oder Kategorie als falsch herausstellt, kann der Eintrag angepasst und erneut gespeichert werden. Die App uebernimmt die Aenderung in die lokale Datenbasis und markiert sie fuer die naechste Synchronisierung.
+
+--- 
+
+## Auftragsvorbereitung: Funktionen und Nutzen
+Die Auftragsvorbereitung dient dazu, Auftraege fuer den Arbeitstag fachlich vorzubereiten und planbar zu machen. Ein Auftrag enthaelt typischerweise Auftragsnummer, Kundenname, Einsatzadresse, Zeitraum und weitere Notizen. Darueber hinaus koennen Positionen hinterlegt werden, also konkrete Taetigkeiten oder Maschinen mit geplanten Minutenwerten.
+
+Eine wichtige Funktion ist die Unterstuetzung mehrtaegiger Auftraege. Damit kann ein Auftrag ueber mehrere Kalendertage gefuehrt werden, ohne ihn mehrfach anlegen zu muessen. Fuer einzelne Tage koennen zusaetzliche Tageseinstellungen gesetzt werden, zum Beispiel geplante Startzeiten oder Faktoren zur Personalplanung. So lassen sich realistische Tagesplaene erstellen, auch wenn der Auftrag laenger laeuft.
+
+Beim Eingeben des Kundennamens bietet die App automatische Vorschlaege aus bereits vorhandenen Daten an. Diese Vorschlaege werden mit jeder weiteren Eingabe dynamisch gefiltert, sodass auch spaeter im Alphabet liegende Namen verlässlich gefunden werden. Gleiches gilt fuer Einsatzadressen: zunaechst werden bekannte lokale Adressen angeboten, optional ergaenzt durch Online-Vorschlaege aus dem Backend. Dadurch wird die Dateneingabe schneller und einheitlicher.
+
+In der Fussleiste des Modus werden Plan-Auftragszeit, Fahrzeit und Tourzeit dargestellt. Diese Kennzahlen geben sofort Rueckmeldung, wie umfangreich ein Tag geplant ist und ob die Aufteilung zwischen Arbeitsanteil und Fahrtanteil plausibel wirkt.
+
+--- 
+
+## Routenplanung: Tagesroute berechnen und anpassen
+Auf Basis der aktiven Auftraege eines Tages kann eine Route berechnet werden. Dabei koennen Start- und Endadresse individuell gesetzt werden, zum Beispiel ab Firmensitz oder ab Heimadresse. Nach dem Berechnen zeigt die App eine zeitliche und inhaltliche Abfolge der Tourstationen mit den zugehoerigen Distanzen und Fahrzeiten.
+
+Die Routenberechnung verwendet den im Backend eingebundenen Routing-Dienst. Liegen fuer Auftragsorte keine oder unvollstaendige Koordinaten vor, kann die Qualitaet der Berechnung sinken. Die App kennzeichnet solche Faelle, damit unvollstaendige Daten ergaenzt werden koennen. Durch die Kombination aus Auftragsdaten, Adressvorschlaegen und Route entsteht eine durchgaengige Planung vom Kunden bis zur Fahrzeit.
+
+Die Routenansicht ist nicht nur eine statische Ausgabe, sondern ein Arbeitswerkzeug. Stationen und Reihenfolgen koennen im Rahmen der bereitgestellten Funktionen angepasst werden, um realistische Tagesablaeufe abzubilden.
+
+--- 
+
+## Reports und Monatsauswertung
+Im Report-Bereich koennen Monatsauswertungen als PDF erzeugt werden. Je nach Freigabe stehen ein Monatsreport und ein Performance-Report zur Verfuegung. Der Monatsreport fasst die gebuchten Zeiten strukturiert zusammen und dient als nachvollziehbare Dokumentation der erfassten Arbeitstage. Der Performance-Report stellt zusaetzlich Planwerte und Ist-Werte gegenueber, sofern diese Funktion fuer den Benutzer aktiviert ist.
+
+Der typische Ablauf ist einfach: Monat waehlen, Report erzeugen, PDF ansehen und bei Bedarf teilen oder speichern. Da Reports auf den synchronisierten Daten basieren, sollten offene lokale Aenderungen vorher synchronisiert werden, um eine vollstaendige Auswertung zu erhalten.
+
+--- 
+
+## Synchronisierung und Offline-Verhalten
+TZ-Pro arbeitet nach dem Offline-First-Prinzip. Jede neue Eingabe wird zuerst lokal gespeichert. Sobald eine Verbindung zum Server besteht, startet die Synchronisierung und uebertraegt offene Aenderungen. Dieses Vorgehen reduziert das Risiko, dass Daten bei Verbindungsabbruechen verloren gehen.
+
+Bei gleichzeitigen Aenderungen an denselben Datensaetzen gilt das Last-Write-Wins-Prinzip. Technisch bedeutet das, dass die Version mit dem juengeren Aenderungszeitpunkt ueberschrieben bleibt. In der Praxis sollte deshalb vermieden werden, denselben Inhalt parallel auf mehreren Geraeten offline zu veraendern. Wenn eine Synchronisierung erfolgreich abgeschlossen ist, sind lokaler und serverseitiger Datenstand wieder konsistent.
+
+--- 
+
+## Menue, Einstellungen und Kontoverwaltung
+Das Menue buendelt alle uebergreifenden Funktionen. Dazu gehoeren der Wechsel zwischen den beiden Hauptmodi, der Zugriff auf Reports, Einstellungen, Passwortaenderung und Abmeldung. Je nach Rolle oder Konfiguration kann der sichtbare Umfang leicht variieren.
+
+Die Passwortaenderung erfolgt im gesicherten Benutzerkontext und benoetigt in der Regel die Eingabe des bisherigen Passworts. Nach einer Aenderung sollte bei Bedarf auf weiteren Geraeten erneut angemeldet werden, damit dort ebenfalls mit gueltigen Zugangsdaten gearbeitet wird.
+
+--- 
+
+## Sicherheit und Datenschutz
+Die Kommunikation mit der Produktivumgebung erfolgt verschluesselt ueber HTTPS. Zugangsdaten werden nicht im Klartext gespeichert. Jeder Benutzer arbeitet mit seinem eigenen Konto, wodurch Datenzugriffe sauber zugeordnet werden koennen. Diese Trennung ist wichtig fuer Nachvollziehbarkeit und Schutz sensibler Informationen.
+
+Aus organisatorischer Sicht gilt: Endgeraete sollten mit Displaysperre gesichert sein, und Zugangsdaten duerfen nicht weitergegeben werden. Bei Verlust eines Geraets sollte der Zugang umgehend ueber den Administrator gesperrt oder das Passwort geaendert werden.
+
+--- 
+
+## Updates und Versionswechsel
+Neue Versionen werden ueber eine aktualisierte APK bereitgestellt. Vor einem Update ist es sinnvoll, offene Aenderungen zu synchronisieren, damit keine rein lokalen Daten auf einem veralteten Stand verbleiben. Nach der Installation der neuen Version sollte kurz geprueft werden, ob Anmeldung, Datumsauswahl, Zeiterfassung und Synchronisierung wie erwartet funktionieren.
+
+Falls ein Versionswechsel aufgrund technischer Vorgaben nur ueber Neuinstallation moeglich ist, sollte dies nach interner Vorgabe durchgefuehrt werden. Entscheidend ist, dass vor der Umstellung nach Moeglichkeit ein erfolgreicher Sync erfolgt ist.
+
+--- 
+
+## Praktischer Kurzleitfaden bei Stoerungen
+Wenn im Alltag Probleme auftreten, hat sich folgender Ablauf bewaehrt: zuerst Netzverbindung pruefen, danach Synchronisierung manuell anstossen, dann die App neu starten und bei Bedarf neu anmelden. Bleibt das Problem bestehen, sollten Zeitpunkt, betroffene Funktion und moegliche Fehlermeldung notiert und an den Support oder Administrator weitergegeben werden. Diese Informationen beschleunigen die Analyse erheblich.
+</pre>
 
 </div>
 </section>
@@ -166,65 +206,116 @@ Jeder Benutzer arbeitet mit einem individuellen Konto.
 <section id="datenschutz">
 <div class="card">
 
-<h2>Datenschutzerklärung – TZ-Pro</h2>
+<pre style="white-space: pre-wrap; font-family: inherit;">
+# Datenschutzerklärung – TZ Pro
 
-<h3>1. Verantwortlicher</h3>
-<p>
-Fabian Lugauer<br>
-E-Mail: fabian.lugauer@gmail.com<br>
-Postanschrift: Wird auf Anfrage mitgeteilt
-</p>
+Diese mobile Anwendung ist ein privates, freiwilliges Projekt zur persönlichen Dokumentation und individuellen Analyse eigener Arbeitszeiten. Die Nutzung erfolgt ausschließlich im Eigeninteresse der jeweiligen Person. Die Anwendung steht in keinem offiziellen Zusammenhang mit einem Arbeitgeber.
 
-<h3>2. Verarbeitete Daten</h3>
-<ul>
-<li>Benutzeranmeldedaten</li>
-<li>Arbeitszeitdaten</li>
-<li>Heimadresse (optional)</li>
-<li>Analyse- und Reportdaten</li>
-<li>Technische Server-Logdaten (z. B. IP-Adresse)</li>
-</ul>
+## 1. Verantwortlicher
 
-<h3>3. Zweck der Verarbeitung</h3>
-<ul>
-<li>Persönliche Auswertung der Arbeitszeiten</li>
-<li>Synchronisierung zwischen Gerät und Server</li>
-<li>Routenplanung</li>
-<li>Benachrichtigungen</li>
-</ul>
+Fabian Lugauer  
+E-Mail: fabian.lugauer@gmail.com  
+Postanschrift: Wird auf Anfrage mitgeteilt  
+Weitere Informationen befinden sich im Play Store Eintrag
 
-<h3>4. Rechtsgrundlage</h3>
-<p>Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.</p>
+## 2. Verarbeitete Daten
 
-<h3>5. Speicherung</h3>
-<p>
-Lokale Speicherung in verschlüsselter SQLite-Datenbank.
-Server-Speicherung innerhalb der EU (tz.tz-api.de).
-Keine Drittstaatenübermittlung.
-</p>
+- Benutzeranmeldedaten (Benutzerkennung, Authentifizierungstoken)
+- Vom Nutzer freiwillig eingegebene Arbeitszeitdaten (Start-/Endzeiten, Kategorien, Notizen)
+- Standortdaten: Heimadresse mit GPS-Koordinaten (nur wenn vom Nutzer angegeben, zur Routenplanung)
+- Individuelle Analyseergebnisse und Reports innerhalb der App
+- Android-spezifische Daten für Benachrichtigungen und Background Services (keine Identifizierung)
 
-<h3>6. Externe Dienste</h3>
-<ul>
-<li>Photon (OpenStreetMap) – Adressvorschläge</li>
-<li>OSRM – Routenberechnung</li>
-</ul>
+## 3. Zweck der Verarbeitung
 
-<h3>7. Kein Tracking</h3>
-<p>
-Die App enthält keine Analysetools, keine Werbung und kein Profiling.
-</p>
+- Persönliche Übersicht, Selbstanalyse und individuelle Auswertung der vom Nutzer eingegebenen Daten
+- Synchronisierung zwischen Gerät und Server für Datensicherung und Zugriff auf anderen Geräten
+- Bereitstellung von Routenplanung auf Grundlage der Heimadresse (über externe API)
+- Versand von Benachrichtigungen zu geplanten Schritten des Arbeitstages
 
-<h3>8. Rechte der betroffenen Personen</h3>
-<p>
-Auskunft, Berichtigung, Löschung, Einschränkung,
-Datenübertragbarkeit, Widerruf der Einwilligung.
-</p>
+## 4. Rechtsgrundlage
 
-<h3>9. Beschwerderecht</h3>
-<p>
-Es besteht das Recht zur Beschwerde bei einer zuständigen Datenschutzaufsichtsbehörde.
-</p>
+Die Verarbeitung erfolgt ausschließlich auf Grundlage der freiwilligen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden.
 
-<p><strong>Stand: Mai 2026</strong></p>
+## 5. Speicherung und Lokale Verarbeitung
+
+**Lokale Speicherung:** Die eingegebenen Daten werden lokal auf dem Gerät in einer verschlüsselten SQLite-Datenbank gespeichert (offline-first Ansatz). Der Nutzer behält die vollständige Kontrolle über diese Daten.
+
+**Server-Speicherung:** Optionale Synchronisierung auf einen Server innerhalb der Europäischen Union (tz.tz-api.de, gehostet in der EU). Eine Übermittlung in Drittstaaten erfolgt nicht.
+
+**Keine Weitergabe an Dritte:** Die Daten werden nicht an Dritte weitergegeben, mit Ausnahme notwendiger technischer Aufrufe (siehe Punkt 6).
+
+## 6. Externe Dienste und Auftragsverarbeiter
+
+Die App verwendet folgende externe Dienste ausschließlich zur Bereitstellung von Funktionen:
+
+- **Photon (OpenStreetMap):** Adressvorschläge bei der Eingabe der Heimadresse. Es werden nur die vom Nutzer eingegebenen Adressteile übertragen, keine Benutzeridentifizierung.
+- **OSRM (OpenStreetMap Routing Machine):** Routenplanung zwischen Heimadresse und geplanten Orten. Es werden nur die erforderlichen Koordinaten übertragen.
+
+Diese Dienste verarbeiten Daten nach ihren eigenen Datenschutzrichtlinien. Der Nutzer kann diese Funktionen vollständig deaktivieren, indem er keine Heimadresse eingibt.
+
+## 7. Datensicherheit
+
+- **Verschlüsslung:** Die Übertragung zwischen App und Server erfolgt ausschließlich verschlüsselt über HTTPS (TLS 1.2+).
+- **Lokale Sicherheit:** Die SQLite-Datenbank auf dem Gerät wird durch das Betriebssystem geschützt.
+- **Technische Maßnahmen:** Angemessene technische und organisatorische Maßnahmen zum Schutz der Daten werden getroffen.
+
+## 8. Android-Berechtigungen
+
+Die App fordert folgende Berechtigungen an:
+
+- **INTERNET:** Erforderlich für Server-Synchronisierung und externe API-Aufrufe
+- **POST_NOTIFICATIONS:** Für Benachrichtigungen zu geplanten Schritten
+- **SCHEDULE_EXACT_ALARM:** Für zeitlich genaue Vorwarn-Benachrichtigungen (kann vom Nutzer aktiviert/deaktiviert werden)
+- **FOREGROUND_SERVICE:** Für kontinuierliche Benachrichtigungsdarstellung während der Arbeit
+- **RECEIVE_BOOT_COMPLETED:** Um Background Services nach Geräteneustart zu starten
+
+## 9. Support-Zugriff auf Daten
+
+Der Betreiber hat grundsätzlich keinen regelmäßigen Zugriff auf die eingegebenen oder gespeicherten Daten.
+
+Ein Zugriff erfolgt ausschließlich im Einzelfall und nur dann, wenn dies zur Bereitstellung von technischem Support, zur Fehleranalyse oder zur Behebung technischer Probleme erforderlich ist. Der Zugriff ist dabei:
+
+- Zweckgebunden und auf das notwendige Maß beschränkt
+- Dokumentiert und nachvollziehbar
+- Ausschließlich zur Erfüllung des jeweiligen Support-Anliegens
+
+Eine Nutzung zu anderen Zwecken, insbesondere zur Leistungs- oder Verhaltenskontrolle, erfolgt nicht.
+
+## 10. Datenaufbewahrung und Löschung
+
+- **Lokale Daten:** Der Nutzer kann Daten jederzeit in der App löschen oder durch Neuinstallation vollständig entfernen.
+- **Server-Daten:** Synchronisierte Daten werden auf dem Server so lange gespeichert, bis sie vom Nutzer gelöscht werden (Löschung wird zum Server synchronisiert).
+- **Automatische Löschung:** Es erfolgt keine automatische Löschung; der Nutzer hat die vollständige Kontrolle.
+
+## 11. Tracking und Analytik
+
+Diese Anwendung enthält **keine**:
+
+- Analysetools oder Tracking-Pixel (Google Analytics, Matomo, etc.)
+- Crash-Reporting-Services, die personenbezogene Daten übermitteln
+- Werbung oder Ad-Netzwerke
+- Verhaltensanalyse oder Profiling
+
+## 12. Rechte der betroffenen Personen
+
+Nutzer haben das Recht auf:
+
+- **Auskunft** über ihre gespeicherten Daten
+- **Berichtigung** fehlerhafter Daten
+- **Löschung** ihrer Daten (jederzeit in der App durchführbar)
+- **Einschränkung der Verarbeitung**
+- **Datenübertragbarkeit** (Datenexport aus der App möglich)
+- **Widerspruch** gegen die Verarbeitung
+- **Widerruf der Einwilligung** mit Wirkung für die Zukunft
+
+Anfragen können per E-Mail an fabian.lugauer@gmail.com gestellt werden.
+
+---
+
+**Stand:** Mai 2026  
+**Letzte Überarbeitung:** 2. Mai 2026
+</pre>
 
 </div>
 </section>
@@ -236,30 +327,19 @@ Es besteht das Recht zur Beschwerde bei einer zuständigen Datenschutzaufsichtsb
 
 <h2>Account- und Datenlöschung</h2>
 
-<h3>Löschung innerhalb der App</h3>
 <p>
-Lokale Daten können jederzeit gelöscht oder durch Deinstallation entfernt werden.
-Server-Daten werden bei Löschung synchronisiert entfernt.
+Lokale Daten können jederzeit innerhalb der App gelöscht oder durch Deinstallation der Anwendung entfernt werden.
 </p>
 
-<h3>Vollständige Account-Löschung</h3>
 <p>
-Antrag per E-Mail an:<br>
-<strong>fabian.lugauer@gmail.com</strong><br>
-Betreff: Accountlöschung TZ-Pro
+Zur vollständigen Löschung des Benutzerkontos inklusive aller serverseitig gespeicherten Daten senden Sie bitte eine E-Mail an:
 </p>
 
-<h3>Umfang der Löschung</h3>
-<ul>
-<li>Profil- und Kontodaten</li>
-<li>Synchronisierte Arbeitszeitdaten</li>
-<li>Reports und Analysewerte</li>
-<li>Authentifizierungsdaten</li>
-</ul>
+<p><strong>fabian.lugauer@gmail.com</strong><br>
+Betreff: Accountlöschung TZ-Pro</p>
 
-<h3>Frist</h3>
 <p>
-Die Löschung erfolgt innerhalb von 14 Tagen.
+Die Löschung erfolgt innerhalb von 14 Tagen nach eindeutiger Identifizierung.
 Eine Bestätigung wird per E-Mail versendet.
 </p>
 

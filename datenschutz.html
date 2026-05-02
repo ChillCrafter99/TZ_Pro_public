@@ -85,7 +85,7 @@ Weitere Informationen befinden sich im Play Store Eintrag
 <ul>
 <li>Persönliche Übersicht, Selbstanalyse und individuelle Auswertung der vom Nutzer eingegebenen Daten</li>
 <li>Synchronisierung zwischen Gerät und Server für Datensicherung und Zugriff auf anderen Geräten</li>
-<li>Bereitstellung von Routenplanung auf Grundlage der Heimadresse (über externe API)</li>
+<li>Bereitstellung von Routenplanung auf Grundlage der Heimadresse (über API)</li>
 <li>Versand von Benachrichtigungen zu geplanten Schritten des Arbeitstages</li>
 </ul>
 
@@ -99,7 +99,7 @@ Die Verarbeitung erfolgt ausschließlich auf Grundlage der freiwilligen Einwilli
 
 <p><strong>Lokale Speicherung:</strong> Die eingegebenen Daten werden lokal auf dem Gerät in einer verschlüsselten SQLite-Datenbank gespeichert (offline-first Ansatz). Der Nutzer behält die vollständige Kontrolle über diese Daten.</p>
 
-<p><strong>Server-Speicherung:</strong> Optionale Synchronisierung auf einen Server innerhalb der Europäischen Union (tz.tz-api.de, gehostet in der EU). Eine Übermittlung in Drittstaaten erfolgt nicht.</p>
+<p><strong>Server-Speicherung:</strong> Optionale Synchronisierung auf einen Server innerhalb der Europäischen Union (tz.tz-api.de, gehostet bei IONOS in Berlin/Deutschland). Eine Übermittlung in Drittstaaten erfolgt nicht.</p>
 
 <p><strong>Keine Weitergabe an Dritte:</strong> Die Daten werden nicht an Dritte weitergegeben, mit Ausnahme notwendiger technischer Aufrufe (siehe Punkt 6).</p>
 
@@ -113,7 +113,8 @@ Die Verarbeitung erfolgt ausschließlich auf Grundlage der freiwilligen Einwilli
 </ul>
 
 <p>
-Diese Dienste verarbeiten Daten nach ihren eigenen Datenschutzrichtlinien. Der Nutzer kann diese Funktionen vollständig deaktivieren, indem er keine Heimadresse eingibt.
+Diese Dienste verarbeiten Daten nach ihren eigenen Datenschutzrichtlinien. Der Nutzer kann diese Funktionen vollständig deaktivieren, indem er keine Heimadresse eingibt. Die Dienste werden ebenfalls über eine eigne Instanz bereitgestellt.
+Eine externe API Anfrage entfällt somit.
 </p>
 
 <h2>7. Datensicherheit</h2>
@@ -127,7 +128,7 @@ Diese Dienste verarbeiten Daten nach ihren eigenen Datenschutzrichtlinien. Der N
 <h2>8. Android-Berechtigungen</h2>
 
 <ul>
-<li><strong>INTERNET:</strong> Erforderlich für Server-Synchronisierung und externe API-Aufrufe</li>
+<li><strong>INTERNET:</strong> Erforderlich für Server-Synchronisierung und API-Aufrufe</li>
 <li><strong>POST_NOTIFICATIONS:</strong> Für Benachrichtigungen zu geplanten Schritten</li>
 <li><strong>SCHEDULE_EXACT_ALARM:</strong> Für zeitlich genaue Vorwarn-Benachrichtigungen</li>
 <li><strong>FOREGROUND_SERVICE:</strong> Für kontinuierliche Benachrichtigungsdarstellung während der Arbeit</li>

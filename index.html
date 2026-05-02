@@ -1,103 +1,283 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>Datenschutzerklärung</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1, h2 {
-            color: #111;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TZ-Pro – Dokumentation & Datenschutz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #212121;
+    line-height: 1.6;
+}
+
+header {
+    background: #1976d2;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    flex-wrap: wrap;
+}
+
+nav button {
+    background: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #555;
+    transition: 0.2s;
+}
+
+nav button.active {
+    color: #1976d2;
+    border-bottom: 3px solid #1976d2;
+}
+
+section {
+    display: none;
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+section.active {
+    display: block;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+h2, h3 {
+    font-weight: 500;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Datenschutzerklärung</h1>
+<header>
+    <h1>TZ-Pro</h1>
+    <p>Dokumentation · Datenschutz · Account-Löschung</p>
+</header>
 
+<nav>
+    <button class="tab active" onclick="showTab('anleitung')">Bedienungsanleitung</button>
+    <button class="tab" onclick="showTab('datenschutz')">Datenschutzerklärung</button>
+    <button class="tab" onclick="showTab('loeschung')">Account / Daten löschen</button>
+</nav>
+
+<!-- ======================= ANLEITUNG ======================= -->
+
+<section id="anleitung" class="active">
+<div class="card">
+
+<h2>Bedienungsanleitung TZ-Pro</h2>
+
+<h3>Vorwort und Zweck der App</h3>
 <p>
-Diese mobile Anwendung ist ein privates, freiwilliges Projekt zur persönlichen
-Dokumentation und individuellen Analyse eigener Arbeitszeiten.
-Die Nutzung erfolgt ausschließlich im Eigeninteresse der jeweiligen Person.
-Die Anwendung steht in keinem offiziellen Zusammenhang mit einem Arbeitgeber.
+TZ-Pro ist die zentrale mobile Anwendung fuer die taegliche Arbeit im Service.
+Die App kombiniert Zeiterfassung, Auftragsvorbereitung, Tourenplanung
+und Monatsauswertung in einer konsistenten Oberflaeche.
 </p>
 
-<h2>1. Verantwortlicher</h2>
+<h3>Installation</h3>
+<p>
+Die Installation erfolgt ueber eine bereitgestellte APK-Datei.
+Installation aus unbekannten Quellen muss erlaubt werden.
+Nach der Installation erfolgt die Anmeldung mit persoenlichen Zugangsdaten.
+</p>
+
+<h3>Tageszettel – Zeiterfassung</h3>
+<p>
+Arbeitszeiten werden als Buchungen mit Kategorie, Start- und Endzeit erfasst.
+Optional koennen Notizen und Auftragszuordnungen hinterlegt werden.
+Die Gesamtarbeitszeit wird automatisch berechnet.
+</p>
+
+<h3>Auftragsvorbereitung</h3>
+<p>
+Auftraege enthalten Auftragsnummer, Kunde, Adresse, Zeitraum
+sowie geplante Positionen. Mehrtaegige Auftraege werden unterstuetzt.
+Adressvorschlaege erleichtern die Dateneingabe.
+</p>
+
+<h3>Routenplanung</h3>
+<p>
+Auf Basis der aktiven Auftraege kann eine Tagesroute berechnet werden.
+Start- und Zieladresse sind individuell definierbar.
+</p>
+
+<h3>Reports</h3>
+<p>
+Monatsreports und Performance-Reports koennen als PDF erzeugt werden.
+Vor Erstellung sollte eine Synchronisierung erfolgen.
+</p>
+
+<h3>Offline-First & Synchronisierung</h3>
+<p>
+Neue Eingaben werden lokal gespeichert und spaeter mit dem Server
+innerhalb der EU synchronisiert.
+</p>
+
+<h3>Sicherheit</h3>
+<p>
+Die Kommunikation erfolgt verschluesselt ueber HTTPS (TLS 1.2+).
+Jeder Benutzer arbeitet mit einem individuellen Konto.
+</p>
+
+</div>
+</section>
+
+<!-- ======================= DATENSCHUTZ ======================= -->
+
+<section id="datenschutz">
+<div class="card">
+
+<h2>Datenschutzerklärung – TZ-Pro</h2>
+
+<h3>1. Verantwortlicher</h3>
 <p>
 Fabian Lugauer<br>
 E-Mail: fabian.lugauer@gmail.com<br>
-Postanschrift: Wird auf Anfrage mitgeteilt<br>
-Weitere Informatinen befinden sich im Play Store Eintrag
+Postanschrift: Wird auf Anfrage mitgeteilt
 </p>
 
-<h2>2. Verarbeitete Daten</h2>
+<h3>2. Verarbeitete Daten</h3>
 <ul>
-    <li>Benutzeranmeldedaten (z. B. Benutzerkennung)</li>
-    <li>Vom Nutzer freiwillig eingegebene Arbeitszeitdaten</li>
-    <li>Individuelle Analyseergebnisse innerhalb der App</li>
+<li>Benutzeranmeldedaten</li>
+<li>Arbeitszeitdaten</li>
+<li>Heimadresse (optional)</li>
+<li>Analyse- und Reportdaten</li>
+<li>Technische Server-Logdaten (z. B. IP-Adresse)</li>
 </ul>
 
-<h2>3. Zweck der Verarbeitung</h2>
+<h3>3. Zweck der Verarbeitung</h3>
+<ul>
+<li>Persönliche Auswertung der Arbeitszeiten</li>
+<li>Synchronisierung zwischen Gerät und Server</li>
+<li>Routenplanung</li>
+<li>Benachrichtigungen</li>
+</ul>
+
+<h3>4. Rechtsgrundlage</h3>
+<p>Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO.</p>
+
+<h3>5. Speicherung</h3>
 <p>
-Die Verarbeitung erfolgt ausschließlich zur persönlichen Übersicht,
-Selbstanalyse und individuellen Auswertung der vom Nutzer selbst eingegebenen Daten.
+Lokale Speicherung in verschlüsselter SQLite-Datenbank.
+Server-Speicherung innerhalb der EU (tz.tz-api.de).
+Keine Drittstaatenübermittlung.
 </p>
 
-<h2>4. Rechtsgrundlage</h2>
+<h3>6. Externe Dienste</h3>
+<ul>
+<li>Photon (OpenStreetMap) – Adressvorschläge</li>
+<li>OSRM – Routenberechnung</li>
+</ul>
+
+<h3>7. Kein Tracking</h3>
 <p>
-Die Verarbeitung erfolgt ausschließlich auf Grundlage der freiwilligen Einwilligung
-gemäß Art. 6 Abs. 1 lit. a DSGVO.
-Die Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden.
+Die App enthält keine Analysetools, keine Werbung und kein Profiling.
 </p>
 
-<h2>5. Speicherung</h2>
+<h3>8. Rechte der betroffenen Personen</h3>
 <p>
-Die Daten werden auf einem Server innerhalb der Europäischen Union gespeichert.
-Eine Übermittlung in Drittstaaten oder an Dritte erfolgt nicht.
+Auskunft, Berichtigung, Löschung, Einschränkung,
+Datenübertragbarkeit, Widerruf der Einwilligung.
 </p>
 
-<h2>6. Datensicherheit</h2>
+<h3>9. Beschwerderecht</h3>
 <p>
-Die Übertragung erfolgt verschlüsselt über HTTPS.
-Es werden angemessene technische Maßnahmen zum Schutz der Daten getroffen.
+Es besteht das Recht zur Beschwerde bei einer zuständigen Datenschutzaufsichtsbehörde.
 </p>
 
-<h2>7. Support-Zugriff auf Daten</h2>
+<p><strong>Stand: Mai 2026</strong></p>
+
+</div>
+</section>
+
+<!-- ======================= LÖSCHUNG ======================= -->
+
+<section id="loeschung">
+<div class="card">
+
+<h2>Account- und Datenlöschung</h2>
+
+<h3>Löschung innerhalb der App</h3>
 <p>
-Der Betreiber dieser Anwendung hat grundsätzlich keinen regelmäßigen Zugriff auf die von Nutzern eingegebenen oder gespeicherten personenbezogenen Daten.
+Lokale Daten können jederzeit gelöscht oder durch Deinstallation entfernt werden.
+Server-Daten werden bei Löschung synchronisiert entfernt.
 </p>
 
+<h3>Vollständige Account-Löschung</h3>
 <p>
-Ein Zugriff auf personenbezogene Daten erfolgt ausschließlich im Einzelfall und nur dann, wenn dies zur Bereitstellung von technischem Support, zur Fehleranalyse oder zur Behebung von technischen Problemen erforderlich ist.
+Antrag per E-Mail an:<br>
+<strong>fabian.lugauer@gmail.com</strong><br>
+Betreff: Accountlöschung TZ-Pro
 </p>
 
+<h3>Umfang der Löschung</h3>
+<ul>
+<li>Profil- und Kontodaten</li>
+<li>Synchronisierte Arbeitszeitdaten</li>
+<li>Reports und Analysewerte</li>
+<li>Authentifizierungsdaten</li>
+</ul>
+
+<h3>Frist</h3>
 <p>
-Der Zugriff erfolgt dabei zweckgebunden, auf das notwendige Maß beschränkt und ausschließlich zur Erfüllung des jeweiligen Support-Anliegens.
+Die Löschung erfolgt innerhalb von 14 Tagen.
+Eine Bestätigung wird per E-Mail versendet.
 </p>
 
-<p>
-Eine Nutzung der Daten zu anderen Zwecken, insbesondere zur Leistungs- oder Verhaltenskontrolle, erfolgt nicht.
-</p>
+</div>
+</section>
 
-<p>
-Alle Zugriffe erfolgen unter Beachtung der geltenden datenschutzrechtlichen Vorgaben und ausschließlich im Rahmen der in dieser Datenschutzerklärung beschriebenen Zwecke.
-</p>
+<footer>
+© 2026 TZ-Pro – Private Projektseite
+</footer>
 
-<h2>8. Rechte der betroffenen Personen</h2>
-<p>
-Nutzer haben das Recht auf Auskunft, Berichtigung, Löschung,
-Einschränkung der Verarbeitung sowie auf Datenübertragbarkeit
-im Rahmen der gesetzlichen Vorgaben.
-</p>
-
-<p>Stand: April 2026</p>
+<script>
+function showTab(id) {
+    document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+    document.querySelectorAll(".tab").forEach(btn => btn.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+    event.target.classList.add("active");
+}
+</script>
 
 </body>
 </html>

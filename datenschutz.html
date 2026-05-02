@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung – TZ-Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #212121;
+    line-height: 1.6;
+}
+
+header {
+    background: #1976d2;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 950px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Datenschutzerklärung – TZ Pro</h1>
+</header>
+
+<div class="container">
+
+<p>
+Diese mobile Anwendung ist ein privates, freiwilliges Projekt zur persönlichen Dokumentation und individuellen Analyse eigener Arbeitszeiten. Die Nutzung erfolgt ausschließlich im Eigeninteresse der jeweiligen Person. Die Anwendung steht in keinem offiziellen Zusammenhang mit einem Arbeitgeber.
+</p>
+
+<h2>1. Verantwortlicher</h2>
+
+<p>
+Fabian Lugauer<br>
+E-Mail: fabian.lugauer@gmail.com<br>
+Postanschrift: Wird auf Anfrage mitgeteilt<br>
+Weitere Informationen befinden sich im Play Store Eintrag
+</p>
+
+<h2>2. Verarbeitete Daten</h2>
+
+<ul>
+<li>Benutzeranmeldedaten (Benutzerkennung, Authentifizierungstoken)</li>
+<li>Vom Nutzer freiwillig eingegebene Arbeitszeitdaten (Start-/Endzeiten, Kategorien, Notizen)</li>
+<li>Standortdaten: Heimadresse mit GPS-Koordinaten (nur wenn vom Nutzer angegeben, zur Routenplanung)</li>
+<li>Individuelle Analyseergebnisse und Reports innerhalb der App</li>
+<li>Android-spezifische Daten für Benachrichtigungen und Background Services (keine Identifizierung)</li>
+</ul>
+
+<h2>3. Zweck der Verarbeitung</h2>
+
+<ul>
+<li>Persönliche Übersicht, Selbstanalyse und individuelle Auswertung der vom Nutzer eingegebenen Daten</li>
+<li>Synchronisierung zwischen Gerät und Server für Datensicherung und Zugriff auf anderen Geräten</li>
+<li>Bereitstellung von Routenplanung auf Grundlage der Heimadresse (über externe API)</li>
+<li>Versand von Benachrichtigungen zu geplanten Schritten des Arbeitstages</li>
+</ul>
+
+<h2>4. Rechtsgrundlage</h2>
+
+<p>
+Die Verarbeitung erfolgt ausschließlich auf Grundlage der freiwilligen Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO. Die Einwilligung kann jederzeit mit Wirkung für die Zukunft widerrufen werden.
+</p>
+
+<h2>5. Speicherung und Lokale Verarbeitung</h2>
+
+<p><strong>Lokale Speicherung:</strong> Die eingegebenen Daten werden lokal auf dem Gerät in einer verschlüsselten SQLite-Datenbank gespeichert (offline-first Ansatz). Der Nutzer behält die vollständige Kontrolle über diese Daten.</p>
+
+<p><strong>Server-Speicherung:</strong> Optionale Synchronisierung auf einen Server innerhalb der Europäischen Union (tz.tz-api.de, gehostet in der EU). Eine Übermittlung in Drittstaaten erfolgt nicht.</p>
+
+<p><strong>Keine Weitergabe an Dritte:</strong> Die Daten werden nicht an Dritte weitergegeben, mit Ausnahme notwendiger technischer Aufrufe (siehe Punkt 6).</p>
+
+<h2>6. Externe Dienste und Auftragsverarbeiter</h2>
+
+<p>Die App verwendet folgende externe Dienste ausschließlich zur Bereitstellung von Funktionen:</p>
+
+<ul>
+<li><strong>Photon (OpenStreetMap):</strong> Adressvorschläge bei der Eingabe der Heimadresse. Es werden nur die vom Nutzer eingegebenen Adressteile übertragen, keine Benutzeridentifizierung.</li>
+<li><strong>OSRM (OpenStreetMap Routing Machine):</strong> Routenplanung zwischen Heimadresse und geplanten Orten. Es werden nur die erforderlichen Koordinaten übertragen.</li>
+</ul>
+
+<p>
+Diese Dienste verarbeiten Daten nach ihren eigenen Datenschutzrichtlinien. Der Nutzer kann diese Funktionen vollständig deaktivieren, indem er keine Heimadresse eingibt.
+</p>
+
+<h2>7. Datensicherheit</h2>
+
+<ul>
+<li><strong>Verschlüsslung:</strong> Die Übertragung zwischen App und Server erfolgt ausschließlich verschlüsselt über HTTPS (TLS 1.2+).</li>
+<li><strong>Lokale Sicherheit:</strong> Die SQLite-Datenbank auf dem Gerät wird durch das Betriebssystem geschützt.</li>
+<li><strong>Technische Maßnahmen:</strong> Angemessene technische und organisatorische Maßnahmen zum Schutz der Daten werden getroffen.</li>
+</ul>
+
+<h2>8. Android-Berechtigungen</h2>
+
+<ul>
+<li><strong>INTERNET:</strong> Erforderlich für Server-Synchronisierung und externe API-Aufrufe</li>
+<li><strong>POST_NOTIFICATIONS:</strong> Für Benachrichtigungen zu geplanten Schritten</li>
+<li><strong>SCHEDULE_EXACT_ALARM:</strong> Für zeitlich genaue Vorwarn-Benachrichtigungen</li>
+<li><strong>FOREGROUND_SERVICE:</strong> Für kontinuierliche Benachrichtigungsdarstellung während der Arbeit</li>
+<li><strong>RECEIVE_BOOT_COMPLETED:</strong> Um Background Services nach Geräteneustart zu starten</li>
+</ul>
+
+<h2>9. Support-Zugriff auf Daten</h2>
+
+<p>
+Der Betreiber hat grundsätzlich keinen regelmäßigen Zugriff auf die eingegebenen oder gespeicherten Daten.
+Ein Zugriff erfolgt ausschließlich im Einzelfall und nur dann, wenn dies zur Bereitstellung von technischem Support, zur Fehleranalyse oder zur Behebung technischer Probleme erforderlich ist.
+</p>
+
+<h2>10. Datenaufbewahrung und Löschung</h2>
+
+<ul>
+<li><strong>Lokale Daten:</strong> Der Nutzer kann Daten jederzeit in der App löschen oder durch Neuinstallation vollständig entfernen.</li>
+<li><strong>Server-Daten:</strong> Synchronisierte Daten werden auf dem Server so lange gespeichert, bis sie vom Nutzer gelöscht werden.</li>
+<li><strong>Automatische Löschung:</strong> Es erfolgt keine automatische Löschung.</li>
+</ul>
+
+<h2>11. Tracking und Analytik</h2>
+
+<p>Diese Anwendung enthält keine Analysetools, keine Werbung und kein Profiling.</p>
+
+<h2>12. Rechte der betroffenen Personen</h2>
+
+<p>
+Nutzer haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruch und Widerruf der Einwilligung.
+Anfragen können per E-Mail an fabian.lugauer@gmail.com gestellt werden.
+</p>
+
+<p><strong>Stand:</strong> Mai 2026<br>
+<strong>Letzte Überarbeitung:</strong> 2. Mai 2026</p>
+
+</div>
+
+<footer>
+© 2026 TZ-Pro
+</footer>
+
+</body>
+</html>

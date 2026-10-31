@@ -81,6 +81,64 @@ footer {
     font-size: 0.9rem;
     color: #666;
 }
+
+footer details {
+    margin-top: 0.5rem;
+}
+
+footer summary {
+    color: #1976d2;
+    cursor: pointer;
+}
+
+footer details p {
+    margin: 0.5rem 0 0;
+}
+
+.markdown-document {
+    color: #333;
+    line-height: 1.75;
+}
+
+.markdown-document h2,
+.markdown-document h3 {
+    color: #1976d2;
+    line-height: 1.3;
+}
+
+.markdown-document h2 {
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+}
+
+.markdown-document h3 {
+    margin: 2rem 0 0.75rem;
+    font-size: 1.2rem;
+}
+
+.markdown-document p {
+    margin: 0 0 1rem;
+}
+
+.markdown-document ul {
+    margin: 0 0 1rem;
+}
+
+.markdown-document hr {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 1rem;
+    }
+
+    .card {
+        padding: 1.25rem;
+    }
+}
 </style>
 </head>
 
@@ -102,98 +160,98 @@ footer {
 <section id="anleitung" class="active">
 <div class="card">
 
-<pre style="white-space: pre-wrap; font-family: inherit;">
+<pre class="markdown-document">
 # Bedienungsanleitung TZ-Pro (aktuelle Version)
 
 ## Vorwort und Zweck der App
-TZ-Pro ist die zentrale mobile Anwendung fuer die taegliche Arbeit im Service. Die App fuehrt mehrere Aufgaben in einer Oberflaeche zusammen: die klassische Zeiterfassung im Tageszettel, die inhaltliche Vorbereitung von Auftraegen, die taegliche Tourenplanung sowie die Erstellung von Monatsauswertungen als PDF. Das Ziel ist, den gesamten Ablauf von der Buchung ueber die Planung bis zur Auswertung konsistent und nachvollziehbar abzubilden.
+TZ-Pro ist die zentrale mobile Anwendung für die tägliche Arbeit im Service. Die App führt mehrere Aufgaben in einer Oberfläche zusammen: die klassische Zeiterfassung im Tageszettel, die inhaltliche Vorbereitung von Aufträgen, die tägliche Tourenplanung sowie die Erstellung von Monatsauswertungen als PDF. Das Ziel ist, den gesamten Ablauf von der Buchung über die Planung bis zur Auswertung konsistent und nachvollziehbar abzubilden.
 
-Die Anwendung ist auf den praktischen Alltag ausgelegt. Das bedeutet, dass auch bei instabiler oder fehlender Internetverbindung weitergearbeitet werden kann. Neue oder geaenderte Daten werden zunaechst lokal auf dem Geraet gespeichert und spaeter mit dem Server abgeglichen. Dadurch bleibt die App auch unterwegs nutzbar, ohne dass Eingaben verloren gehen.
+Die Anwendung ist auf den praktischen Alltag ausgelegt. Das bedeutet, dass auch bei instabiler oder fehlender Internetverbindung weitergearbeitet werden kann. Neue oder geänderte Daten werden zunächst lokal auf dem Gerät gespeichert und später mit dem Server abgeglichen. Dadurch bleibt die App auch unterwegs nutzbar, ohne dass Eingaben verloren gehen.
 
 --- 
 
 ## Installation und erster Start
-Die Installation erfolgt ueber eine intern bereitgestellte APK-Datei. Da die Verteilung nicht ueber den Google Play Store laeuft, muss auf dem Geraet die Installation aus unbekannten Quellen fuer die jeweilige Download- oder Dateimanager-App erlaubt werden. Nach der Installation kann TZ-Pro direkt gestartet werden.
+Die Installation erfolgt über eine intern bereitgestellte APK-Datei. Da die Verteilung nicht über den Google Play Store läuft, muss auf dem Gerät die Installation aus unbekannten Quellen für die jeweilige Download- oder Dateimanager-App erlaubt werden. Nach der Installation kann TZ-Pro direkt gestartet werden.
 
-Beim ersten Start erscheint die Anmeldung. Es werden die persoenlichen Zugangsdaten verwendet. Benutzername und Passwort muessen exakt in der richtigen Schreibweise eingegeben werden. Je nach Sicherheitskonfiguration kann nach laengerer Inaktivitaet eine erneute Anmeldung erforderlich sein. Eine Passwortaenderung ist spaeter direkt in der App moeglich.
+Beim ersten Start erscheint die Anmeldung. Es werden die persönlichen Zugangsdaten verwendet. Benutzername und Passwort müssen exakt in der richtigen Schreibweise eingegeben werden. Je nach Sicherheitskonfiguration kann nach längerer Inaktivität eine erneute Anmeldung erforderlich sein. Eine Passwortänderung ist später direkt in der App möglich.
 
 --- 
 
-## Grundaufbau der Oberflaeche
-Nach der Anmeldung wird der Hauptbildschirm mit dem aktuell ausgewaehlten Datum angezeigt. Das Datum in der oberen Leiste ist die zentrale Bezugsgroesse fuer fast alle Funktionen. Egal ob Zeiterfassung, Auftragsvorbereitung oder Routenplanung: gearbeitet wird immer auf Basis des gerade ausgewaehlten Tages.
+## Grundaufbau der Oberfläche
+Nach der Anmeldung wird der Hauptbildschirm mit dem aktuell ausgewählten Datum angezeigt. Das Datum in der oberen Leiste ist die zentrale Bezugsgröße für fast alle Funktionen. Egal ob Zeiterfassung, Auftragsvorbereitung oder Routenplanung: gearbeitet wird immer auf Basis des gerade ausgewählten Tages.
 
-In TZ-Pro gibt es zwei Hauptmodi. Der erste Modus ist der Tageszettel fuer die Zeitbuchungen. Der zweite Modus ist die Auftragsvorbereitung fuer Planung und Strukturierung von Auftraegen. Zwischen beiden Modi kann im Menue gewechselt werden. Die App zeigt in jeder Ansicht die jeweils relevanten Informationen fuer den ausgewaehlten Tag und blendet unnoetige Bedienelemente aus.
+In TZ-Pro gibt es zwei Hauptmodi. Der erste Modus ist der Tageszettel für die Zeitbuchungen. Der zweite Modus ist die Auftragsvorbereitung für Planung und Strukturierung von Aufträgen. Zwischen beiden Modi kann im Menü gewechselt werden. Die App zeigt in jeder Ansicht die jeweils relevanten Informationen für den ausgewählten Tag und blendet unnötige Bedienelemente aus.
 
 --- 
 
 ## Tageszettel: Zeiterfassung im Detail
-Im Tageszettel werden Arbeitszeiten als einzelne Buchungen erfasst. Eine Buchung besteht mindestens aus Kategorie, Startzeit und Endzeit. Optional kann eine Notiz hinterlegt werden. Wenn sinnvoll, kann die Buchung auch einem Auftrag zugeordnet werden. Dadurch wird spaeter eine bessere Auswertung moeglich, insbesondere im Zusammenspiel mit der Auftragsvorbereitung.
+Im Tageszettel werden Arbeitszeiten als einzelne Buchungen erfasst. Eine Buchung besteht mindestens aus Kategorie, Startzeit und Endzeit. Optional kann eine Notiz hinterlegt werden. Wenn sinnvoll, kann die Buchung auch einem Auftrag zugeordnet werden. Dadurch wird später eine bessere Auswertung möglich, insbesondere im Zusammenspiel mit der Auftragsvorbereitung.
 
-Beim Anlegen eines neuen Eintrags oeffnet sich ein Eingabebereich, in dem die Zeiten direkt gesetzt werden. Die App unterstuetzt den typischen Ablauf aus der Praxis: Startzeit eingeben, Endzeit eingeben, Kategorie waehlen, ggf. Notiz ergaenzen und speichern. Bestehende Eintraege koennen anschliessend jederzeit bearbeitet werden. Ebenso koennen fehlerhafte oder nicht mehr benoetigte Eintraege geloescht werden.
+Beim Anlegen eines neuen Eintrags öffnet sich ein Eingabebereich, in dem die Zeiten direkt gesetzt werden. Die App unterstützt den typischen Ablauf aus der Praxis: Startzeit eingeben, Endzeit eingeben, Kategorie wählen, ggf. Notiz ergänzen und speichern. Bestehende Einträge können anschließend jederzeit bearbeitet werden. Ebenso können fehlerhafte oder nicht mehr benötigte Einträge gelöscht werden.
 
-Die Kategorien bilden unterschiedliche Arten von Arbeitszeit ab, zum Beispiel Auftragszeit, Fahrt, Buero, Pause oder Urlaub. In der Fussleiste wird die Gesamtarbeitszeit des Tages angezeigt, wobei Pausen nicht in die Arbeitszeit einberechnet werden. So ist jederzeit direkt sichtbar, wie viel produktive Zeit fuer den ausgewaehlten Tag gebucht wurde.
+Die Kategorien bilden unterschiedliche Arten von Arbeitszeit ab, zum Beispiel Auftragszeit, Fahrt, Büro, Pause oder Urlaub. In der Fußleiste wird die Gesamtarbeitszeit des Tages angezeigt, wobei Pausen nicht in die Arbeitszeit einberechnet werden. So ist jederzeit direkt sichtbar, wie viel produktive Zeit für den ausgewählten Tag gebucht wurde.
 
-Die Zeiterfassung ist so ausgelegt, dass auch nachtraegliche Korrekturen moeglich bleiben. Wenn sich eine Uhrzeit oder Kategorie als falsch herausstellt, kann der Eintrag angepasst und erneut gespeichert werden. Die App uebernimmt die Aenderung in die lokale Datenbasis und markiert sie fuer die naechste Synchronisierung.
+Die Zeiterfassung ist so ausgelegt, dass auch nachträgliche Korrekturen möglich bleiben. Wenn sich eine Uhrzeit oder Kategorie als falsch herausstellt, kann der Eintrag angepasst und erneut gespeichert werden. Die App übernimmt die Änderung in die lokale Datenbasis und markiert sie für die nächste Synchronisierung.
 
 --- 
 
 ## Auftragsvorbereitung: Funktionen und Nutzen
-Die Auftragsvorbereitung dient dazu, Auftraege fuer den Arbeitstag fachlich vorzubereiten und planbar zu machen. Ein Auftrag enthaelt typischerweise Auftragsnummer, Kundenname, Einsatzadresse, Zeitraum und weitere Notizen. Darueber hinaus koennen Positionen hinterlegt werden, also konkrete Taetigkeiten oder Maschinen mit geplanten Minutenwerten.
+Die Auftragsvorbereitung dient dazu, Aufträge für den Arbeitstag fachlich vorzubereiten und planbar zu machen. Ein Auftrag enthält typischerweise Auftragsnummer, Kundenname, Einsatzadresse, Zeitraum und weitere Notizen. Darüber hinaus können Positionen hinterlegt werden, also konkrete Tätigkeiten oder Maschinen mit geplanten Minutenwerten.
 
-Eine wichtige Funktion ist die Unterstuetzung mehrtaegiger Auftraege. Damit kann ein Auftrag ueber mehrere Kalendertage gefuehrt werden, ohne ihn mehrfach anlegen zu muessen. Fuer einzelne Tage koennen zusaetzliche Tageseinstellungen gesetzt werden, zum Beispiel geplante Startzeiten oder Faktoren zur Personalplanung. So lassen sich realistische Tagesplaene erstellen, auch wenn der Auftrag laenger laeuft.
+Eine wichtige Funktion ist die Unterstützung mehrtägiger Aufträge. Damit kann ein Auftrag über mehrere Kalendertage geführt werden, ohne ihn mehrfach anlegen zu müssen. Für einzelne Tage können zusätzliche Tageseinstellungen gesetzt werden, zum Beispiel geplante Startzeiten oder Faktoren zur Personalplanung. So lassen sich realistische Tagespläne erstellen, auch wenn der Auftrag länger läuft.
 
-Beim Eingeben des Kundennamens bietet die App automatische Vorschlaege aus bereits vorhandenen Daten an. Diese Vorschlaege werden mit jeder weiteren Eingabe dynamisch gefiltert, sodass auch spaeter im Alphabet liegende Namen verlässlich gefunden werden. Gleiches gilt fuer Einsatzadressen: zunaechst werden bekannte lokale Adressen angeboten, optional ergaenzt durch Online-Vorschlaege aus dem Backend. Dadurch wird die Dateneingabe schneller und einheitlicher.
+Beim Eingeben des Kundennamens bietet die App automatische Vorschläge aus bereits vorhandenen Daten an. Diese Vorschläge werden mit jeder weiteren Eingabe dynamisch gefiltert, sodass auch später im Alphabet liegende Namen verlässlich gefunden werden. Gleiches gilt für Einsatzadressen: zunächst werden bekannte lokale Adressen angeboten, optional ergänzt durch Online-Vorschläge aus dem Backend. Dadurch wird die Dateneingabe schneller und einheitlicher.
 
-In der Fussleiste des Modus werden Plan-Auftragszeit, Fahrzeit und Tourzeit dargestellt. Diese Kennzahlen geben sofort Rueckmeldung, wie umfangreich ein Tag geplant ist und ob die Aufteilung zwischen Arbeitsanteil und Fahrtanteil plausibel wirkt.
+In der Fußleiste des Modus werden Plan-Auftragszeit, Fahrzeit und Tourzeit dargestellt. Diese Kennzahlen geben sofort Rückmeldung, wie umfangreich ein Tag geplant ist und ob die Aufteilung zwischen Arbeitsanteil und Fahrtanteil plausibel wirkt.
 
 --- 
 
 ## Routenplanung: Tagesroute berechnen und anpassen
-Auf Basis der aktiven Auftraege eines Tages kann eine Route berechnet werden. Dabei koennen Start- und Endadresse individuell gesetzt werden, zum Beispiel ab Firmensitz oder ab Heimadresse. Nach dem Berechnen zeigt die App eine zeitliche und inhaltliche Abfolge der Tourstationen mit den zugehoerigen Distanzen und Fahrzeiten.
+Auf Basis der aktiven Aufträge eines Tages kann eine Route berechnet werden. Dabei können Start- und Endadresse individuell gesetzt werden, zum Beispiel ab Firmensitz oder ab Heimadresse. Nach dem Berechnen zeigt die App eine zeitliche und inhaltliche Abfolge der Tourstationen mit den zugehörigen Distanzen und Fahrzeiten.
 
-Die Routenberechnung verwendet den im Backend eingebundenen Routing-Dienst. Liegen fuer Auftragsorte keine oder unvollstaendige Koordinaten vor, kann die Qualitaet der Berechnung sinken. Die App kennzeichnet solche Faelle, damit unvollstaendige Daten ergaenzt werden koennen. Durch die Kombination aus Auftragsdaten, Adressvorschlaegen und Route entsteht eine durchgaengige Planung vom Kunden bis zur Fahrzeit.
+Die Routenberechnung verwendet den im Backend eingebundenen Routing-Dienst. Liegen für Auftragsorte keine oder unvollständige Koordinaten vor, kann die Qualität der Berechnung sinken. Die App kennzeichnet solche Fälle, damit unvollständige Daten ergänzt werden können. Durch die Kombination aus Auftragsdaten, Adressvorschlägen und Route entsteht eine durchgängige Planung vom Kunden bis zur Fahrzeit.
 
-Die Routenansicht ist nicht nur eine statische Ausgabe, sondern ein Arbeitswerkzeug. Stationen und Reihenfolgen koennen im Rahmen der bereitgestellten Funktionen angepasst werden, um realistische Tagesablaeufe abzubilden.
+Die Routenansicht ist nicht nur eine statische Ausgabe, sondern ein Arbeitswerkzeug. Stationen und Reihenfolgen können im Rahmen der bereitgestellten Funktionen angepasst werden, um realistische Tagesabläufe abzubilden.
 
 --- 
 
 ## Reports und Monatsauswertung
-Im Report-Bereich koennen Monatsauswertungen als PDF erzeugt werden. Je nach Freigabe stehen ein Monatsreport und ein Performance-Report zur Verfuegung. Der Monatsreport fasst die gebuchten Zeiten strukturiert zusammen und dient als nachvollziehbare Dokumentation der erfassten Arbeitstage. Der Performance-Report stellt zusaetzlich Planwerte und Ist-Werte gegenueber, sofern diese Funktion fuer den Benutzer aktiviert ist.
+Im Report-Bereich können Monatsauswertungen als PDF erzeugt werden. Je nach Freigabe stehen ein Monatsreport und ein Performance-Report zur Verfügung. Der Monatsreport fasst die gebuchten Zeiten strukturiert zusammen und dient als nachvollziehbare Dokumentation der erfassten Arbeitstage. Der Performance-Report stellt zusätzlich Planwerte und Ist-Werte gegenüber, sofern diese Funktion für den Benutzer aktiviert ist.
 
-Der typische Ablauf ist einfach: Monat waehlen, Report erzeugen, PDF ansehen und bei Bedarf teilen oder speichern. Da Reports auf den synchronisierten Daten basieren, sollten offene lokale Aenderungen vorher synchronisiert werden, um eine vollstaendige Auswertung zu erhalten.
+Der typische Ablauf ist einfach: Monat wählen, Report erzeugen, PDF ansehen und bei Bedarf teilen oder speichern. Da Reports auf den synchronisierten Daten basieren, sollten offene lokale Änderungen vorher synchronisiert werden, um eine vollständige Auswertung zu erhalten.
 
 --- 
 
 ## Synchronisierung und Offline-Verhalten
-TZ-Pro arbeitet nach dem Offline-First-Prinzip. Jede neue Eingabe wird zuerst lokal gespeichert. Sobald eine Verbindung zum Server besteht, startet die Synchronisierung und uebertraegt offene Aenderungen. Dieses Vorgehen reduziert das Risiko, dass Daten bei Verbindungsabbruechen verloren gehen.
+TZ-Pro arbeitet nach dem Offline-First-Prinzip. Jede neue Eingabe wird zuerst lokal gespeichert. Sobald eine Verbindung zum Server besteht, startet die Synchronisierung und überträgt offene Änderungen. Dieses Vorgehen reduziert das Risiko, dass Daten bei Verbindungsabbrüchen verloren gehen.
 
-Bei gleichzeitigen Aenderungen an denselben Datensaetzen gilt das Last-Write-Wins-Prinzip. Technisch bedeutet das, dass die Version mit dem juengeren Aenderungszeitpunkt ueberschrieben bleibt. In der Praxis sollte deshalb vermieden werden, denselben Inhalt parallel auf mehreren Geraeten offline zu veraendern. Wenn eine Synchronisierung erfolgreich abgeschlossen ist, sind lokaler und serverseitiger Datenstand wieder konsistent.
+Bei gleichzeitigen Änderungen an denselben Datensätzen gilt das Last-Write-Wins-Prinzip. Technisch bedeutet das, dass die Version mit dem jüngeren Änderungszeitpunkt überschrieben bleibt. In der Praxis sollte deshalb vermieden werden, denselben Inhalt parallel auf mehreren Geräten offline zu verändern. Wenn eine Synchronisierung erfolgreich abgeschlossen ist, sind lokaler und serverseitiger Datenstand wieder konsistent.
 
 --- 
 
-## Menue, Einstellungen und Kontoverwaltung
-Das Menue buendelt alle uebergreifenden Funktionen. Dazu gehoeren der Wechsel zwischen den beiden Hauptmodi, der Zugriff auf Reports, Einstellungen, Passwortaenderung und Abmeldung. Je nach Rolle oder Konfiguration kann der sichtbare Umfang leicht variieren.
+## Menü, Einstellungen und Kontoverwaltung
+Das Menü bündelt alle übergreifenden Funktionen. Dazu gehören der Wechsel zwischen den beiden Hauptmodi, der Zugriff auf Reports, Einstellungen, Passwortänderung und Abmeldung. Je nach Rolle oder Konfiguration kann der sichtbare Umfang leicht variieren.
 
-Die Passwortaenderung erfolgt im gesicherten Benutzerkontext und benoetigt in der Regel die Eingabe des bisherigen Passworts. Nach einer Aenderung sollte bei Bedarf auf weiteren Geraeten erneut angemeldet werden, damit dort ebenfalls mit gueltigen Zugangsdaten gearbeitet wird.
+Die Passwortänderung erfolgt im gesicherten Benutzerkontext und benötigt in der Regel die Eingabe des bisherigen Passworts. Nach einer Änderung sollte bei Bedarf auf weiteren Geräten erneut angemeldet werden, damit dort ebenfalls mit gültigen Zugangsdaten gearbeitet wird.
 
 --- 
 
 ## Sicherheit und Datenschutz
-Die Kommunikation mit der Produktivumgebung erfolgt verschluesselt ueber HTTPS. Zugangsdaten werden nicht im Klartext gespeichert. Jeder Benutzer arbeitet mit seinem eigenen Konto, wodurch Datenzugriffe sauber zugeordnet werden koennen. Diese Trennung ist wichtig fuer Nachvollziehbarkeit und Schutz sensibler Informationen.
+Die Kommunikation mit der Produktivumgebung erfolgt verschlüsselt über HTTPS. Zugangsdaten werden nicht im Klartext gespeichert. Jeder Benutzer arbeitet mit seinem eigenen Konto, wodurch Datenzugriffe sauber zugeordnet werden können. Diese Trennung ist wichtig für Nachvollziehbarkeit und Schutz sensibler Informationen.
 
-Aus organisatorischer Sicht gilt: Endgeraete sollten mit Displaysperre gesichert sein, und Zugangsdaten duerfen nicht weitergegeben werden. Bei Verlust eines Geraets sollte der Zugang umgehend ueber den Administrator gesperrt oder das Passwort geaendert werden.
+Aus organisatorischer Sicht gilt: Endgeräte sollten mit Displaysperre gesichert sein, und Zugangsdaten dürfen nicht weitergegeben werden. Bei Verlust eines Geräts sollte der Zugang umgehend über den Administrator gesperrt oder das Passwort geändert werden.
 
 --- 
 
 ## Updates und Versionswechsel
-Neue Versionen werden ueber eine aktualisierte APK bereitgestellt. Vor einem Update ist es sinnvoll, offene Aenderungen zu synchronisieren, damit keine rein lokalen Daten auf einem veralteten Stand verbleiben. Nach der Installation der neuen Version sollte kurz geprueft werden, ob Anmeldung, Datumsauswahl, Zeiterfassung und Synchronisierung wie erwartet funktionieren.
+Neue Versionen werden über eine aktualisierte APK bereitgestellt. Vor einem Update ist es sinnvoll, offene Änderungen zu synchronisieren, damit keine rein lokalen Daten auf einem veralteten Stand verbleiben. Nach der Installation der neuen Version sollte kurz geprüft werden, ob Anmeldung, Datumsauswahl, Zeiterfassung und Synchronisierung wie erwartet funktionieren.
 
-Falls ein Versionswechsel aufgrund technischer Vorgaben nur ueber Neuinstallation moeglich ist, sollte dies nach interner Vorgabe durchgefuehrt werden. Entscheidend ist, dass vor der Umstellung nach Moeglichkeit ein erfolgreicher Sync erfolgt ist.
+Falls ein Versionswechsel aufgrund technischer Vorgaben nur über Neuinstallation möglich ist, sollte dies nach interner Vorgabe durchgeführt werden. Entscheidend ist, dass vor der Umstellung nach Möglichkeit ein erfolgreicher Sync erfolgt ist.
 
 --- 
 
-## Praktischer Kurzleitfaden bei Stoerungen
-Wenn im Alltag Probleme auftreten, hat sich folgender Ablauf bewaehrt: zuerst Netzverbindung pruefen, danach Synchronisierung manuell anstossen, dann die App neu starten und bei Bedarf neu anmelden. Bleibt das Problem bestehen, sollten Zeitpunkt, betroffene Funktion und moegliche Fehlermeldung notiert und an den Support oder Administrator weitergegeben werden. Diese Informationen beschleunigen die Analyse erheblich.
+## Praktischer Kurzleitfaden bei Störungen
+Wenn im Alltag Probleme auftreten, hat sich folgender Ablauf bewährt: zuerst Netzverbindung prüfen, danach Synchronisierung manuell anstoßen, dann die App neu starten und bei Bedarf neu anmelden. Bleibt das Problem bestehen, sollten Zeitpunkt, betroffene Funktion und mögliche Fehlermeldung notiert und an den Support oder Administrator weitergegeben werden. Diese Informationen beschleunigen die Analyse erheblich.
 </pre>
 
 </div>
@@ -204,7 +262,7 @@ Wenn im Alltag Probleme auftreten, hat sich folgender Ablauf bewaehrt: zuerst Ne
 <section id="datenschutz">
 <div class="card">
 
-<pre style="white-space: pre-wrap; font-family: inherit;">
+<pre class="markdown-document">
 # Datenschutzerklärung – TZ Pro
 
 Diese mobile Anwendung ist ein privates, freiwilliges Projekt zur persönlichen Dokumentation und individuellen Analyse eigener Arbeitszeiten. Die Nutzung erfolgt ausschließlich im Eigeninteresse der jeweiligen Person. Die Anwendung steht in keinem offiziellen Zusammenhang mit einem Arbeitgeber.
@@ -214,7 +272,7 @@ Diese mobile Anwendung ist ein privates, freiwilliges Projekt zur persönlichen 
 Fabian Lugauer  
 E-Mail: fabian.lugauer@gmail.com  
 Postanschrift: Wird auf Anfrage mitgeteilt  
-Weitere Informationen befinden sich im Play Store Eintrag
+Weitere Informationen befinden sich im Play-Store-Eintrag.
 
 ## 2. Verarbeitete Daten
 
@@ -254,7 +312,7 @@ Diese Dienste verarbeiten Daten nach ihren eigenen Datenschutzrichtlinien. Der N
 
 ## 7. Datensicherheit
 
-- **Verschlüsslung:** Die Übertragung zwischen App und Server erfolgt ausschließlich verschlüsselt über HTTPS (TLS 1.2+).
+- **Verschlüsselung:** Die Übertragung zwischen App und Server erfolgt ausschließlich verschlüsselt über HTTPS (TLS 1.2+).
 - **Lokale Sicherheit:** Die SQLite-Datenbank auf dem Gerät wird durch das Betriebssystem geschützt.
 - **Technische Maßnahmen:** Angemessene technische und organisatorische Maßnahmen zum Schutz der Daten werden getroffen.
 
@@ -346,9 +404,97 @@ Eine Bestätigung wird per E-Mail versendet.
 
 <footer>
 © 2026 TZ-Pro – Private Projektseite
+<details>
+    <summary>Impressum</summary>
+    <p>
+        Fabian Lugauer<br>
+        E-Mail: <a href="mailto:fabian.lugauer@gmail.com">fabian.lugauer@gmail.com</a><br>
+        Postanschrift: Wombacher Straße 75, 97816 Lohr am Main
+    </p>
+</details>
 </footer>
 
 <script>
+function renderMarkdownDocuments() {
+    document.querySelectorAll("pre.markdown-document").forEach(source => {
+        const fragment = document.createDocumentFragment();
+        const lines = source.textContent.trim().split(/\r?\n/);
+        let paragraph = [];
+        let list;
+
+        function appendInlineText(element, text) {
+            const parts = text.split(/(\*\*[^*]+\*\*)/g);
+            parts.forEach(part => {
+                if (part.startsWith("**") && part.endsWith("**")) {
+                    const strong = document.createElement("strong");
+                    strong.textContent = part.slice(2, -2);
+                    element.appendChild(strong);
+                } else if (part) {
+                    element.appendChild(document.createTextNode(part));
+                }
+            });
+        }
+
+        function flushParagraph() {
+            if (!paragraph.length) return;
+            const element = document.createElement("p");
+            paragraph.forEach((part, index) => {
+                appendInlineText(element, part.text);
+                if (index < paragraph.length - 1) {
+                    if (part.hardBreak) {
+                        element.appendChild(document.createElement("br"));
+                    } else {
+                        element.appendChild(document.createTextNode(" "));
+                    }
+                }
+            });
+            fragment.appendChild(element);
+            paragraph = [];
+        }
+
+        function closeList() {
+            if (!list) return;
+            fragment.appendChild(list);
+            list = null;
+        }
+
+        lines.forEach(line => {
+            const trimmed = line.trim();
+            const heading = trimmed.match(/^(#{1,2})\s+(.+)$/);
+
+            if (!trimmed) {
+                flushParagraph();
+                closeList();
+            } else if (heading) {
+                flushParagraph();
+                closeList();
+                const element = document.createElement(heading[1].length === 1 ? "h2" : "h3");
+                appendInlineText(element, heading[2]);
+                fragment.appendChild(element);
+            } else if (/^-{3,}\s*$/.test(trimmed)) {
+                flushParagraph();
+                closeList();
+                fragment.appendChild(document.createElement("hr"));
+            } else if (trimmed.startsWith("- ")) {
+                flushParagraph();
+                if (!list) list = document.createElement("ul");
+                const item = document.createElement("li");
+                appendInlineText(item, trimmed.slice(2));
+                list.appendChild(item);
+            } else {
+                closeList();
+                paragraph.push({ text: trimmed, hardBreak: / {2,}$/.test(line) });
+            }
+        });
+
+        flushParagraph();
+        closeList();
+        source.replaceWith(fragment);
+    });
+}
+
+renderMarkdownDocuments();
+
 function showTab(id) {
     document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
     document.querySelectorAll(".tab").forEach(btn => btn.classList.remove("active"));
